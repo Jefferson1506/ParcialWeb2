@@ -12,6 +12,7 @@ namespace Entidad
 
         public int ValorInf { get; set; }
 
+        public DateTime FechaInfraccion { get; set; }
         public Persona Persona { get; set; }
     }
 }

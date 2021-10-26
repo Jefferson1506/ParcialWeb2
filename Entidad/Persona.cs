@@ -6,9 +6,9 @@ namespace Entidad
     {
         [Key]
         public int Identificacion { get; set; }
+        public string tipoIdentificacion { get; set; }
+   
         
-        public string Nombre { get; set; }
-        
-        public int Edad { get; set; }
+
     }
 }

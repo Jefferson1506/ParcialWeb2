@@ -20,7 +20,7 @@ namespace Logica
            
            try{
                var infraccionesGuardar = _context.Infracciones.Find(infraccion.CodigoInf);
-
+                
                if(infraccionesGuardar !=null)return new GuardarInfraccionResponse("ERROR LA INFRACCION YA ESTA REGISTRADA");
             
                 _context.Infracciones.Add(infraccion);

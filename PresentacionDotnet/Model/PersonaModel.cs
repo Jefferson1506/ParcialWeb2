@@ -1,12 +1,15 @@
+using System.ComponentModel.DataAnnotations;
 using Entidad;
 
 
 
     public class PersonaInputModel
     {
+        [Key]
         public int Identificacion { get; set; }
-        public string Nombre { get; set; }
-        public int Edad { get; set; }
+        public string tipoIdentificacion { get; set; }
+        
+        
     }
 
     public class PersonaViewModel : PersonaInputModel
@@ -15,8 +18,7 @@ using Entidad;
         public PersonaViewModel(Persona persona)
         {
             Identificacion = persona.Identificacion;
-            Nombre = persona.Nombre;
-            Edad = persona.Edad;
+            tipoIdentificacion  = persona.tipoIdentificacion ;
         }
       
     }

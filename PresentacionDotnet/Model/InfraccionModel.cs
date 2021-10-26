@@ -1,17 +1,20 @@
 using Entidad;
 using System;
-
+using System.ComponentModel.DataAnnotations;
 
 
 
      public class InfraccionInputModel
     {
+      [Key]
         public int IdInfraccion { get; set; }
         public string CodigoInf { get; set; }
 
         public String DescripcionInf { get; set; }
 
         public int ValorInf { get; set; }
+
+        public Persona Persona{get;set;}
     }
 
     public class InfraccionViewModel : InfraccionInputModel
@@ -22,6 +25,7 @@ using System;
             CodigoInf = infraccion.CodigoInf;
             DescripcionInf=infraccion.DescripcionInf;
             ValorInf=infraccion.ValorInf;
+            Persona = infraccion.Persona;
             
       }
       

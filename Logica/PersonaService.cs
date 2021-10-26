@@ -44,66 +44,6 @@ namespace Logica
             return personas;
         }
        
-
-
-
-
-
-
-  public string Eliminar(int identificacion)
-        {
-            try
-            {
-                var persona = _context.Personas.Find(identificacion);
-                if (persona != null)
-                {
-                    _context.Personas.Remove(persona);
-                    _context.SaveChanges();
-                    return (
-                    $"El registro {persona.Nombre} se ha eliminado satisfactoriamente."
-                    );
-                }
-                else
-                {
-                    return (
-                    $"Lo sentimos, {identificacion} no se encuentra registrada."
-                    );
-                }
-            }
-            catch (Exception e)
-            {
-                return $"Error de la Aplicación: {e.Message}";
-            }
-        }
-
-        public Persona BuscarxIdentificacion(int identificacion)
-        {
-            Persona persona = _context.Personas.Find(identificacion);
-            return persona;
-        }
-
-        public GuardarPersonaResponse Modificar(Persona personaNew){
-                try{
-                    var personaOld = _context.Personas.Find(personaNew.Identificacion);
-                    if(personaOld !=null){
-                        personaOld.Identificacion = personaNew.Identificacion;
-                        personaOld.Nombre = personaNew.Nombre;
-                        personaOld.Edad = personaNew.Edad;
-                        _context.Personas.Update(personaOld);
-                        _context.SaveChanges();
-                        return new GuardarPersonaResponse(personaOld);
-                    }
-
-                    return new GuardarPersonaResponse($"No existe {personaNew.Nombre}");
-
-
-                }catch (Exception e){
-                    return new GuardarPersonaResponse(e.Message);
-                }
-
-        }
-
-
     public class GuardarPersonaResponse 
     {
         public GuardarPersonaResponse(Persona persona)

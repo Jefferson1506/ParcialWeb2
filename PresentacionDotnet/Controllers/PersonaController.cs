@@ -46,46 +46,12 @@ public class PersonaController : ControllerBase
         return Ok(response.Persona);
     }
 
-    // GET: api/Persona/5
-    [HttpGet("{identificacion}")]
-    public ActionResult<PersonaViewModel> Get(int identificacion)
-    {
-        var persona = _personaService.BuscarxIdentificacion(identificacion);
-        if (persona == null) return NotFound();
-        var personaViewModel = new PersonaViewModel(persona);
-        return personaViewModel;
-    }
-
-//modificar
-    [HttpPut]
-
-    public ActionResult<string> Put(PersonaInputModel personaInput){
-
-            Persona persona = MapearPersona(personaInput);
-            var respuesta = _personaService.Modificar(persona);
-
-            if(respuesta.Error){
-                return BadRequest(respuesta.Mensaje);
-            }
-
-        return Ok(respuesta.Persona);
-    }
-
-    // DELETE: api/Persona/5
-    [HttpDelete("{identificacion}")]
-    public ActionResult<string> Delete(int identificacion)
-    {
-        string mensaje = _personaService.Eliminar(identificacion);
-        return Ok(mensaje);
-    }
-
     private Persona MapearPersona(PersonaInputModel personaInput)
     {
         var persona = new Persona
         {
             Identificacion = personaInput.Identificacion,
-            Nombre = personaInput.Nombre,
-            Edad = personaInput.Edad,
+            tipoIdentificacion  = personaInput.tipoIdentificacion
         };
         return persona;
     }
