@@ -30,7 +30,9 @@ namespace PresentacionDotnet.Controllers
             IdInfraccion = infraccionInput.IdInfraccion,
             CodigoInf = infraccionInput.CodigoInf,
             DescripcionInf=infraccionInput.DescripcionInf,
-            ValorInf=infraccionInput.ValorInf
+            ValorInf=infraccionInput.ValorInf,
+            FechaInfraccion=infraccionInput.FechaInfraccion,
+            Persona = infraccionInput.Persona
         };
         return infraccion;
     }
@@ -38,7 +40,7 @@ namespace PresentacionDotnet.Controllers
 
      // POST: registrar las multas
     [HttpPost]
-    public ActionResult<InfraccionViewModel> Post(InfraccionInputModel infraccionInput)
+    public ActionResult<PersonaViewModel> Post(InfraccionInputModel infraccionInput)
     {
         Infraccion infraccion = MapearInfraccion(infraccionInput);
 

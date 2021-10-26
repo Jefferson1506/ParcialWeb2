@@ -14,6 +14,8 @@ using System.ComponentModel.DataAnnotations;
 
         public int ValorInf { get; set; }
 
+        public DateTime FechaInfraccion { get; set; }
+
         public Persona Persona{get;set;}
     }
 
@@ -25,6 +27,7 @@ using System.ComponentModel.DataAnnotations;
             CodigoInf = infraccion.CodigoInf;
             DescripcionInf=infraccion.DescripcionInf;
             ValorInf=infraccion.ValorInf;
+            FechaInfraccion = infraccion.FechaInfraccion;
             Persona = infraccion.Persona;
             
       }
