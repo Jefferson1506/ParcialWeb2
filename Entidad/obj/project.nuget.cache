@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rCdeyZBc0331qsl0AzgOE3WH5mI9TyMW0UqSMrx7lD3U6eWYI4akwegI2ulAmA8FoQIV0bGvt7iCTSGctjuyFQ==",
+  "dgSpecHash": "MbURlUKjZH+LapHyMWqPjjQhb1QF/+uBT0W9zuqVtFg6v8Ge/xjqpbKnQnHBuNxAixDMQe7jelvi+pNj8PPy+g==",
   "success": true,
   "projectFilePath": "C:\\Users\\usuario\\Documents\\GitHub\\ParcialWeb2\\Entidad\\Entidad.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\system.componentmodel.annotations\\6.0.0-preview.4.21253.7\\system.componentmodel.annotations.6.0.0-preview.4.21253.7.nupkg.sha512"
+  ],
   "logs": []
 }

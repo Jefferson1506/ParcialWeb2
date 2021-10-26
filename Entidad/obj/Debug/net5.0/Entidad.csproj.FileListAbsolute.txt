@@ -1,0 +1,12 @@
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\bin\Debug\net5.0\Entidad.deps.json
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\bin\Debug\net5.0\Entidad.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\bin\Debug\net5.0\ref\Entidad.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\bin\Debug\net5.0\Entidad.pdb
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\obj\Debug\net5.0\Entidad.csproj.AssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\obj\Debug\net5.0\Entidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\obj\Debug\net5.0\Entidad.AssemblyInfoInputs.cache
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\obj\Debug\net5.0\Entidad.AssemblyInfo.cs
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\obj\Debug\net5.0\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\obj\Debug\net5.0\Entidad.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\obj\Debug\net5.0\ref\Entidad.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Entidad\obj\Debug\net5.0\Entidad.pdb

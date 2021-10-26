@@ -1,0 +1,15 @@
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\bin\Debug\net5.0\Datos.deps.json
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\bin\Debug\net5.0\Datos.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\bin\Debug\net5.0\ref\Datos.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\bin\Debug\net5.0\Datos.pdb
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\bin\Debug\net5.0\Entidad.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\bin\Debug\net5.0\Entidad.pdb
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\Datos.csproj.AssemblyReference.cache
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\Datos.AssemblyInfoInputs.cache
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\Datos.AssemblyInfo.cs
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\Datos.csproj.CopyComplete
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\Datos.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\ref\Datos.dll
+C:\Users\usuario\Documents\GitHub\ParcialWeb2\Datos\obj\Debug\net5.0\Datos.pdb
