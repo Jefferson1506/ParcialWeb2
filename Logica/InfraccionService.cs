@@ -23,30 +23,29 @@ namespace Logica
             try
             {
                 var personaBuscar = _context.Personas.Find(infraccion.Persona.Identificacion);
-                var infraccionBuscar =_context.Infracciones.Find(infraccion.IdInfraccion);
+                var infraccionBuscar = _context.Infracciones.Find(infraccion.IdInfraccion);
 
-               
+                if (infraccionBuscar != null)
+                    return new GuardarInfraccionResponse("LA INFRACCION YA EXISTE");
 
-                if(infraccion.CodigoInf =="D02" || infraccion.CodigoInf =="B01" || infraccion.CodigoInf =="C38"  ){
-
-                      if(personaBuscar ==null)return new GuardarInfraccionResponse("PERSONA NO EXISTE ");
-                
-               infraccion.Persona = personaBuscar ;
-                _context.Infracciones.Add(infraccion);
-                _context.SaveChanges();
-                return new GuardarInfraccionResponse(infraccion);
-
-                }else
+                if (infraccion.CodigoInf == "D02" || infraccion.CodigoInf == "B01" || infraccion.CodigoInf == "C38")
                 {
 
-                     return new GuardarInfraccionResponse("EL CODIGO DE LA FACTURA NO ES VALIDAD");
-                }
-                   
-                
-           //  if(infraccionBuscar != null)return new GuardarInfraccionResponse("LA INFRACCION YA SE CUENTRA REGISTRADA");
-                
+                    if (personaBuscar == null) return new GuardarInfraccionResponse("PERSONA NO EXISTE ");
 
-           
+                    infraccion.Persona = personaBuscar;
+                    _context.Infracciones.Add(infraccion);
+                    _context.SaveChanges();
+
+                    return new GuardarInfraccionResponse(infraccion);
+
+                }
+                else
+                {
+
+                    return new GuardarInfraccionResponse("EL CODIGO DE LA FACTURA NO ES VALIDAD");
+                }
+
 
             }
             catch (Exception e)
@@ -57,7 +56,7 @@ namespace Logica
 
         }
 
-       
+
 
         public List<Infraccion> ConsultarTodos()
         {
